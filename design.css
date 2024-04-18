@@ -1,0 +1,147 @@
+/* reset all the default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* general global style */
+body {
+    background-color: #b3b3b3;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* center the containers */
+}
+
+/* header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* navigation menu icon styles */
+.navMenu {
+    cursor: pointer;
+}
+
+/* navigation menu formatting */
+.navMenu {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.navMenu img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* adds a transition effect */
+}
+
+.navMenu.clicked img {
+    transform: rotate(90deg); /* rotates the menu icon on click */
+}
+
+ul {
+    list-style-type: none; /* remove padding and default list */
+    padding: 0; 
+    margin: 0; 
+}
+
+ul li {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #333;
+}
+
+ul li a:hover {
+    color: #007bff; /* changes colour when hovering links */
+}
+
+/* positioning */
+.navMenu {
+    order: 1; /* menu on the left */
+}
+
+h1 {
+    order: 2; /*puts title in the middle */
+}
+
+.helpButton {
+    order: 3; /* puts help button on the right */
+}
+
+/* all button styles */
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.mainButton,
+.secondaryButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* sets main buttons to blue */
+.mainButton {
+    background-color: #007bff;
+    color: #fff;
+}
+/* sets secondary buttons to gray*/
+.secondaryButton {
+    background-color: #6c757d; 
+    color: #fff;
+    display: none;
+}
+
+/* help button style */
+.helpButton {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+}
+
+#progressCircle {
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+/* center the circle */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    
+}
+
+#timerSettings input, #timerSettings button {
+    margin: 5px;
+    padding: 8px;
+    width: 100%; /* makes text field span whole screen */
+}
